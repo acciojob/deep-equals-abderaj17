@@ -6,6 +6,9 @@ function deepEquals(a, b) {
 	if(a === b){
 		return true;
 	}
+	 if (Number.isNaN(val1) && Number.isNaN(val2)) {
+        return true;
+    }
 
 	if(Array.isArray(a) && Array.isArray(b)){
 		if(a.length !== b.length){
